@@ -4,11 +4,10 @@ The formal guide to creating a shared dataset is [here](https://huggingface.co/d
 
 Official instructions for how to implement a dataset in 🤗 exists [here](https://huggingface.co/docs/datasets/add_dataset.html). 
 
-Please make a github account prior to implementing a dataset; install `git` and additionally `git lfs`, as the latter is required for transferring larger files. Installation instructions are below:
+Please make a github account prior to implementing a dataset; install `git` and maybe `git lfs`, as the latter is required for transferring larger files. Installation instructions are below:
 
 Installation: <br>
     - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) <br>
-    - [git-lfs](https://git-lfs.github.com/) <br>
 
 If you choose to fork the repo, you will likely require the following: <br>
     - [flake8 linter](https://flake8.pycqa.org/en/latest/) <br>
