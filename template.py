@@ -108,6 +108,13 @@ class YourDatasetName(datasets.GeneratorBasedBuilder):
     DEFAULT_CONFIG_NAME = _DATASETNAME
 
     """
+    NOTE I find it easier to do this last after the _generate_examples have
+    been implemented. Reason is I didn't really know what to put here
+    (basically copied the structure of the original json, but not knowing
+    some might not necessarily be read), and folks could just copy over the
+    second item in the yield line, and change the assigned variables to data
+    types.
+
     Step 4: Populate "information" about the dataset that creates a skeletal structure for an example within the dataset looks like.
 
     The following data structures are useful:

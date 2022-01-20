@@ -59,6 +59,13 @@ You can also make an alternative environment to test changes.** You may do this 
 
 If you make your own environment, be sure to run `python setup.py install` within the datasets repository to ensure you have all necessary packages.
 
+For MAC users, if you run into compilation errors like `error: command 'x86_64-apple-darwin13.4.0-clang' failed with exit status 254`, please try setting the compilers:
+
+```bash   
+    export CC=/usr/bin/clang
+    export CXX=/usr/bin/clang++
+```
+
 **Note! If you already have the `datasets` library installed in your environment of choice, please uninstall (via `pip uninstall datasets`) and re-install in the editable mode**
 
 ### 4. **Implement your dataset**
@@ -70,7 +77,7 @@ Make a new directory within the `datasets` folder as such: <br>
 
 Implement your dataset following the guide in `template.py`.
 
-### 5. **Format code** via the following commands:
+### 5. **Format code** via the following commands in the root directory:
 
     make style
     make quality
